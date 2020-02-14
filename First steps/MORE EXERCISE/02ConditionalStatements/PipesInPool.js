@@ -7,7 +7,7 @@ function solve(input) {
     let pipeTwoFill = pipeTwo * hours;
     let twoPipesFill = pipeOneFill + pipeTwoFill;
     let overflow = 0;
-    let percentageOfPoolFilled = ((twoPipesFill * 100) /volume).toFixed(2);
+    let percentageOfPoolFilled = ((twoPipesFill * 100) / volume).toFixed(2);
     let percentageOfPipeOne = ((pipeOneFill * 100) / twoPipesFill).toFixed(2);
     let percentageOfPipeTwo = ((pipeTwoFill * 100) / twoPipesFill).toFixed(2);
     if (twoPipesFill <= volume) {
