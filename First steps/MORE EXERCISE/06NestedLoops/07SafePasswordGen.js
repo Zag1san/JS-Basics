@@ -13,7 +13,7 @@ function solve(input) {
                 break;
             }
             for(let j = 1; j <= second; j++) {
-                generatedPass += "" + String.fromCharCode(a) + String.fromCharCode(b) + i + j + String.fromCharCode(b) + String.fromCharCode(a) + "|";
+                generatedPass += String.fromCharCode(a) + String.fromCharCode(b) + i + j + String.fromCharCode(b) + String.fromCharCode(a) + "|";
                 a++;
                 b++;
                 passCnt++;
