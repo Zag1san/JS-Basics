@@ -1,7 +1,8 @@
 function DungeonestDark(stringArray) {
 
     let rooms = stringArray[0].split("|")
-
+    console.log(rooms);
+    
     let health = 100;
     let coins = 0;
     let roomCounter = 0;
