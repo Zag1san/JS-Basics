@@ -7,7 +7,6 @@ function repeatString(string, count) {
 
 }
 
-
-repeatString('abc',
+console.log (repeatString('abc',
     3
-    )
+    ))

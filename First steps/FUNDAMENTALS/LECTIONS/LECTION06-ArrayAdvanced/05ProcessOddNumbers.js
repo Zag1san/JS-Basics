@@ -1,22 +1,22 @@
 function processOddNumbers(array) {
 
-    let newArray = array.slice();
+     let newArray = array.slice();
     
-    let processedArray = newArray.filter((x, i)=> i % 2 !== 0).reverse().map(x => x * 2).join(" ");
-    console.log(processedArray);
+    // let processedArray = newArray.filter((x, i)=> i % 2 !== 0).reverse().map(x => x * 2).join(" ");
+    // console.log(processedArray);
     
-    return processedArray;
+    // return processedArray;
     
-    // let processedArray = [];
-    // for (const index in newArray) {
+    let processedArray = [];
+    for (const index in newArray) {
 
-    //     if (index % 2 !== 0) {
-    //         processedArray.unshift(newArray[index]);
-    //     }
-    // }
+        if (index % 2 !== 0) {
+            processedArray.unshift(newArray[index]);
+        }
+    }
     
     
-    // console.log(processedArray.map(x => x * 2).join(" "));
+    console.log(processedArray.map(x => x * 2).join(" "));
     
     
 }

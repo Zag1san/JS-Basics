@@ -2,6 +2,5 @@ function solve() {
 
 
 
-    
 }
  solve()

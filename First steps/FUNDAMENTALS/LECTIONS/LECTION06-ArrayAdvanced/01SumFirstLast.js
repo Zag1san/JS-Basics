@@ -7,4 +7,6 @@ function sumFirstLast(arr) {
 
    
 }
-sumFirstLast(['20', '30', '40'])
+
+
+console.log(sumFirstLast(['20', '30', '40']))

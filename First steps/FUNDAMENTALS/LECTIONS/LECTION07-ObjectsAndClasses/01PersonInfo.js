@@ -12,9 +12,8 @@ function solve(firstName, lastName, age) {
     }
     
 }
-console.log(
+
     solve("Peter", 
     "Pan",
     "20"
     )
-);
