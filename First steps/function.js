@@ -2,6 +2,6 @@ function solve() {
 
 
 
-    
+
 }
- solve()
+solve()

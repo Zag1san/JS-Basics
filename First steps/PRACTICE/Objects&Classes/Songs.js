@@ -27,7 +27,34 @@ function solve(input) {
 
         }
     }
-      
+                           // OTHER SOLUTION
+    // class Song {
+
+    //     constructor(typeList, name, time) {
+    //         this.type = typeList;
+    //         this.name = name;
+    //         this.time = time;
+
+    //     }
+    // }
+
+    // let songsArr = [];
+    // let numberOfSongs = input.shift();
+    // let typeOfList = input[input.length - 1];
+
+    // for (let i = 0; i < numberOfSongs; i++) {
+    //     let [type, name, time] = input[i].split("_");
+    //     let currentSong = new Song(type, name, time);
+    //     songsArr.push(currentSong)
+
+    // }
+
+    // if (typeOfList === "all") {
+    //     songsArr.forEach(x => console.log(x.name));
+    // } else {
+    //     let filteredSongs = songsArr.filter(x => x.type === typeOfList);
+    //     filteredSongs.forEach(x => console.log(x.name));
+    // }
     
 }
  solve([2,

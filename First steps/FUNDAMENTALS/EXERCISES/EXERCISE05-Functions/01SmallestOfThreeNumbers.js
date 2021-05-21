@@ -12,6 +12,7 @@ function samllestNumber(first, second, third) {
     }
 
 
+
 }
 samllestNumber(600, 342, 123)
 

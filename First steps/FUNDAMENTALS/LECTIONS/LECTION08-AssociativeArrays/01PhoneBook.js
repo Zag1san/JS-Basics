@@ -6,8 +6,9 @@ function solve(input) {
         let [name, phone] = input[i].split(" ");
         contacts[name] = phone;
     }
-    
+   
     Object.keys(contacts).forEach(key => {
+        
         console.log(`${key} -> ${contacts[key]}`);
         
     })

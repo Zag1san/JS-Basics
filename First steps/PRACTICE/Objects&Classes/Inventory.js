@@ -1,20 +1,26 @@
 function solve(input) {
 
-    let heroes = []
-    input.forEach(element => {
-        let level = 0;
-        let [name, level, items] = element.split(" / ");
-        let sortedItems = items.split(" , ").sort().join(" ");
-        
-        heroes.push({heroName: name, heroLevel: Number(level), items: sortedItems});
-        
+    let heroes = [];
+
+    input.forEach(line => {
+        let currentHero = {};
+        let tokens = line.split(" / ");
+        let name = tokens[0];
+        let level = Number(tokens[1]);
+        let items = tokens[2].split(", ").sort((a, b) => a.localeCompare(b));;
+        currentHero.hero = name;
+        currentHero.level = level;
+        currentHero.items = items;
+        heroes.push(currentHero);
     });
 
+    heroes.sort((a, b) => a.level - b.level);
 
-
-
-console.log(heroes);
-
+    heroes.forEach(hero =>{
+        console.log(`Hero: ${hero.hero}`);
+        console.log(`level => ${hero.level}`);
+        console.log(`items => ${hero.items.join(", ")}`);
+    })
 
 
 }

@@ -4,7 +4,7 @@ function solve(text, string) {
     let counter = 0;
     for (const word of words) {
         if (word === string) {
-            counter++
+            counter++;
         }
     }
     console.log(counter);

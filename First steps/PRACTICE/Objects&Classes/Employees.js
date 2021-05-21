@@ -1,21 +1,23 @@
 function solve(input) {
 
-   let listOfEmployees = [];
+   class Employee {
 
+      constructor(name, number) {
+         this.name = name;
+         this.number = number;
+
+      }
+   }
+   let employeeInfoArr = [];
    for (let i = 0; i < input.length; i++) {
-      let currentEmployee = {};
-      currentEmployee.name = input[i];
-      currentEmployee.personalNumber = input[i].length;
-      listOfEmployees.push(currentEmployee);
-
-
-   }
-   for (const employee of listOfEmployees) {
-
-      console.log(`Name: ${employee.name} -- Personal Number: ${employee.personalNumber}`);
+      let currentNumber = input[i].length;
+      let name = input[i];
+      let currentEmployee = new Employee(name, currentNumber);
+      employeeInfoArr.push(currentEmployee);
 
    }
 
+   employeeInfoArr.forEach((x) => console.log(`Name: ${x.name} -- Personal Number: ${x.number}`));
 
 }
 solve([
