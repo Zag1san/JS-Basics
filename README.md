@@ -1,1 +1,1 @@
-# JS-Basics
+# JS-Course
