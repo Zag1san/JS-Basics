@@ -6,9 +6,7 @@ function spiceMustFlow(startingYield) {
     while (spiceInYield >= 100) {
 
         totalSpice += spiceInYield - 26;
-        if (totalSpice < 0) {
-            totalSpice = 0;
-        }
+       
         totalDays++;
         spiceInYield -= 10
     }
